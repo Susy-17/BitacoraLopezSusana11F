@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Susana López</title>
+    <link rel="icon" href="c:\Users\Alumno Capouilliez\Documents\Orantes11F\Recursos\img\logocapu.png">
+    <style>
+        html, body{
+            height:100%;
+            margin:0%;
+            font-family: arial, sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        header{
+            padding: 20px;
+            background-color: rgb(199, 144, 199);
+            color: rgb(235, 215, 190); 
+        }
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 1200;
+            margin: 0 auto;
+            width: 90%;
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid black;
+            background-color: rgb(183, 181, 181);
+        }
+        h1 {
+            color: #fff; 
+            text-shadow: 
+                0 0 5px #fff,
+                0 0 10px #b026ff,
+                0 0 20px #b026ff,
+                0 0 40px #b026ff;
+        }
+        .logo-zoom {
+            transition: transform 0.3s ease;
+            cursor: pointer; 
+        }
+        .logo-zoom:hover {
+            transform: scale(1.1);
+        }
+        .semana {
+            background-color: #ffffff;
+            border-radius: 0 12px 12px 0; 
+            padding: 25px;
+            margin: 20px 0;
+            border: 1px solid rgba(150, 82, 233, 0.816);
+            border-left: 5px solid transparent; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+        .semana:hover {
+            transform: translateX(10px); 
+            border-left: 5px solid #b026ff; 
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        .pdf-container {
+            margin-top: 15px;
+            margin-left: -25px;
+            margin-right: -25px;
+            border: none;
+            border-radius: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 700px;
+        }
+        .video-container {
+            margin-top: 15px;
+            margin-left: -25px;
+            margin-right: -25px;
+            background-color: #2d2c2c; /* Fondo negro por si el video es de otro formato */
+        }
+        .video-container video {
+            width: 100%; /* Ocupa todo el ancho de la tarjeta */
+            height: auto; /* Mantiene la proporción original del video */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Bítacora Segunda y Tercera Unidad </h1>
+    </header>
+    <main>
+        <h4> Contenido de la página WEB</h4>
+        <main>
+    <div class="semana">
+        <h3>Semana 1: Introducción Arduino</h3>
+        <p>En esta semana aprendimos los conceptos básicos de Arduino.</p>
+        <div class="pdf-container">
+            <embed src="c:\Users\Alumno Capouilliez\Documents\Orantes11F\Recursos\Introducción Arduino (1).pdf" type="application/pdf" width="100%" height="500px">
+        </div>
+    </div>
+    <div class="semana">
+        <h3>Semana 2: HTML</h3>
+        <p>En esta semana aprendimos los conceptos básicos de estructuras HTML</p>
+    <div class="semana">
+    <h3>Semana 2: HTML</h3>
+    <p>En esta semana aprendimos los conceptos básicos de estructuras HTML</p>
+    <div class="video-container">
+        <video controls>
+            <source src="c:\Users\Alumno Capouilliez\Documents\Orantes11F\Recursos\img\ledrgb.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+    </main>
+    <footer>
+        <span>@susylop</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="50" width="200" class="logo-zoom">
+    </footer>
+</body>
+</html>
