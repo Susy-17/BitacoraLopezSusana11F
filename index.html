@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bitácora Susana López</title>
-    <link rel="icon" href="Recursos/img/IntroducciónArduino(1)(1).pdf">
+    <link rel="icon" href="Recursos/img/LOGO_CAPOUILLIEZ - Isotipos rojo.png">
     <style>
-        html, body{
-            height:100%;
-            margin:0%;
-            font-family: arial, sans-serif;
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
-        body{
+        body {
             display: flex;
             flex-direction: column;
             text-align: center;
         }
-        header{
+        header {
             padding: 20px;
             background-color: rgb(199, 144, 199);
             color: rgb(235, 215, 190); 
         }
-        main{
+        main {
             flex: 1;
             padding: 20px;
-            max-width: 1200;
+            max-width: 1200px;
             margin: 0 auto;
             width: 90%;
         }
-        footer{
+        footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -69,72 +69,76 @@
         }
         .pdf-container {
             margin-top: 15px;
-            margin-left: -25px;
-            margin-right: -25px;
             border: none;
-            border-radius: 0;
             overflow: hidden;
             width: 100%;
-            height: 700px;
+            height: 600px;
         }
         .video-container {
             margin-top: 15px;
-            margin-left: -25px;
-            margin-right: -25px;
-            background-color: #2d2c2c; /* Fondo negro por si el video es de otro formato */
+            background-color: #2d2c2c;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
         }
-        .video-container video {
-            width: 100%; /* Ocupa todo el ancho de la tarjeta */
-            height: auto; /* Mantiene la proporción original del video */
+        .video-container video, 
+        .video-container img {
+            width: 100%;
+            height: auto;
             display: block;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1> Bítacora Segunda y Tercera Unidad </h1>
+        <h1>Bitácora Segunda y Tercera Unidad</h1>
     </header>
+
     <main>
-        <h4> Contenido de la página WEB</h4>
-        <main>
-    <div class="semana">
-        <h3>Semana 1: Introducción Arduino</h3>
-        <p>En esta semana aprendimos los conceptos básicos de Arduino.</p>
-        <div class="pdf-container">
-            <embed src="Recursos/img/IntroducciónArduino(1)(1).pdf" width="100%" height="500px">
+        <h4>Contenido de la página WEB</h4>
+
+        <div class="semana">
+            <h3>Semana 1: Introducción Arduino</h3>
+            <p>En esta semana aprendimos los conceptos básicos de Arduino.</p>
+            <div class="pdf-container">
+                <embed src="Recursos/img/IntroducciónArduino(1)(1).pdf" width="100%" height="100%" type="application/pdf">
+            </div>
         </div>
-    </div>
-    <div class="semana">
-        <h3>Semana 2: HTML</h3>
-        <p>En esta semana aprendimos los conceptos básicos de estructuras HTML</p>
-    <div class="semana">
-    <h3>Semana 2: HTML</h3>
-    <p>En esta semana aprendimos los conceptos básicos de estructuras HTML</p>
-    <div class="video-container">
-        <video controls>
-            <source src="Recursos/img/VideoLedLopez.mp4" type="video/mp4">
-        </video>
-    </div>
-</div>
-     <div class="semana">
+
+        <div class="semana">
+            <h3>Semana 2: HTML</h3>
+            <p>En esta semana aprendimos los conceptos básicos de estructuras HTML.</p>
+            <div class="video-container">
+                <video controls>
+                    <source src="Recursos/img/VideoLedLopez.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+        </div>
+
+        <div class="semana">
             <h3>Semana 5: Elaboración de circuito</h3>
             <p>Circuito:</p>
             <div class="video-container">
                 <img src="Recursos/img/Semana 5 susana.jpg" alt="Foto del circuito Semana 5">
             </div>
+        </div>
+
         <div class="semana">
-    <h3>Semana 6: Semana 6 </h3>
-    <p> Aprendimos a usar un sensor ultrasónico.</p>
-    <div class="video-container">
-        <video controls>
-            <source src="Recursos/img/semaforo susana.mp4" type="video/mp4">
-        </video>
-    </div>
-</div>
+            <h3>Semana 6: Sensor Ultrasónico y Semáforo</h3>
+            <p>Aprendimos a usar un sensor ultrasónico.</p>
+            <div class="video-container">
+                <video controls>
+                    <source src="Recursos/img/semaforo susana.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+        </div>
     </main>
+
     <footer>
         <span>@susylop</span>
-        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="50" width="200" class="logo-zoom">
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="50" width="200" class="logo-zoom" alt="Logo Capouilliez">
     </footer>
 </body>
 </html>
