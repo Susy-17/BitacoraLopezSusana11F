@@ -27,6 +27,7 @@
             max-width: 1200px;
             margin: 0 auto;
             width: 90%;
+            box-sizing: border-box;
         }
         footer {
             display: flex;
@@ -38,6 +39,7 @@
         }
         h1 {
             color: #fff; 
+            margin: 0;
             text-shadow: 
                 0 0 5px #fff,
                 0 0 10px #b026ff,
@@ -45,6 +47,8 @@
                 0 0 40px #b026ff;
         }
         .logo-zoom {
+            height: 50px;
+            width: auto;
             transition: transform 0.3s ease;
             cursor: pointer; 
         }
@@ -67,12 +71,17 @@
             border-left: 5px solid #b026ff; 
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         }
+        .semana h3 {
+            color: #b026ff;
+            margin-top: 0;
+        }
         .pdf-container {
             margin-top: 15px;
             border: none;
             overflow: hidden;
             width: 100%;
             height: 600px;
+            border-radius: 8px;
         }
         .video-container {
             margin-top: 15px;
@@ -91,12 +100,10 @@
 </head>
 <body>
     <header>
-        <h1>Bitácora Segunda y Tercera Unidad</h1>
+        <h1>Bitácora - Robótica</h1>
     </header>
 
     <main>
-        <h4>Contenido de la página WEB</h4>
-
         <div class="semana">
             <h3>Semana 1: Introducción Arduino</h3>
             <p>En esta semana aprendimos los conceptos básicos de Arduino.</p>
@@ -106,19 +113,34 @@
         </div>
 
         <div class="semana">
-            <h3>Semana 2: HTML</h3>
-            <p>En esta semana aprendimos los conceptos básicos de estructuras HTML.</p>
+            <h3>Semana 2: HTML y Prácticas</h3>
+            <p>En esta semana aprendimos los conceptos básicos de estructuras HTML y proyectos:</p>
             <div class="video-container">
                 <video controls>
                     <source src="Recursos/img/VideoLedLopez.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de videos.
                 </video>
             </div>
         </div>
 
         <div class="semana">
-            <h3>Semana 5: Elaboración de circuito</h3>
-            <p>Circuito:</p>
+            <h3>Semana 3: Conceptos Avanzados</h3>
+            <p>Imagen demostrativa de la semana 3:</p>
+            <div class="video-container">
+                <img src="Recursos/semana 3.png" alt="Imagen Semana 3">
+            </div>
+        </div>
+
+        <div class="semana">
+            <h3>Semana 4: Sensores y Actuadores</h3>
+            <p>Imagen demostrativa de la semana 4:</p>
+            <div class="video-container">
+                <img src="Recursos/semana 4.png" alt="Imagen Semana 4">
+            </div>
+        </div>
+
+        <div class="semana">
+            <h3>Semana 5: Elaboración de Circuito</h3>
+            <p>Fotografía del circuito ensamblado:</p>
             <div class="video-container">
                 <img src="Recursos/img/Semana 5 susana.jpg" alt="Foto del circuito Semana 5">
             </div>
@@ -126,7 +148,7 @@
 
         <div class="semana">
             <h3>Semana 6: Sensor Ultrasónico y Semáforo</h3>
-            <p>Aprendimos a usar un sensor ultrasónico.</p>
+            <p>Aprendimos a usar un sensor ultrasónico y programar el semáforo:</p>
             <div class="video-container">
                 <video controls>
                     <source src="Recursos/img/semaforo susana.mp4" type="video/mp4">
@@ -134,11 +156,22 @@
                 </video>
             </div>
         </div>
+
+        <div class="semana">
+            <h3>Semana 7: Grabación de Circuito</h3>
+            <p>Muestra final del funcionamiento del circuito:</p>
+            <div class="video-container">
+                <video controls>
+                    <source src="VIDEO PIR.mp4" type="video/mp4">
+                  
+                </video>
+            </div>
+        </div>
     </main>
 
     <footer>
         <span>@susylop</span>
-        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="50" width="200" class="logo-zoom" alt="Logo Capouilliez">
+        <img src="Recursos/img/logocapu.png" class="logo-zoom" alt="Logo Capouilliez">
     </footer>
 </body>
 </html>
